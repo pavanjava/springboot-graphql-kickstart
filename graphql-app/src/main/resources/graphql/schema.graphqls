@@ -1,18 +1,24 @@
-type Book{
-    id: ID
-    name: String
-    pageCount: Int
-    author: Author
+scalar LocalDateTime
+
+enum Trainer{
+    PAVAN_MANTHA
+    ARUN_BOPPUDI
 }
 
-type Author{
-    id: ID
-    firstName: String
-    lastName: String
+enum Difficulty{
+    BEGINNER
+    ADVANCED
 }
 
+type GraphqlClass{
+    id: ID!
+    trainer: Trainer!
+    difficulty: Difficulty!
+    startsAt: LocalDateTime!
+    endsAt: LocalDateTime!
+}
 #######################################################
 
 type Query{
-    bookById(id: ID): Book
+    attendClass(trainer: Trainer!): [GraphqlClass!]!
 }
