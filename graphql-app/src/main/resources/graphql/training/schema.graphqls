@@ -17,8 +17,3 @@ type GraphqlClass{
     startsAt: LocalDateTime!
     endsAt: LocalDateTime!
 }
-#######################################################
-
-type Query{
-    attendClass(trainer: Trainer!): [GraphqlClass!]!
-}

@@ -1,0 +1,6 @@
+type BankAcct{
+    id: ID!
+    acctHolderName: String!
+    amount: Float!
+    currency: Currency!
+}

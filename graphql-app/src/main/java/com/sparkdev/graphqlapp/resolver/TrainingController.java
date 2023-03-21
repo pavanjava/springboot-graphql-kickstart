@@ -1,4 +1,4 @@
-package com.sparkdev.graphqlapp.controller;
+package com.sparkdev.graphqlapp.resolver;
 
 import com.sparkdev.graphqlapp.domain.GraphqlClass;
 import com.sparkdev.graphqlapp.enums.Difficulty;

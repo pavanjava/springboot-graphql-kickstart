@@ -1,0 +1,7 @@
+enum Currency{
+    USD
+    EUR
+    INR
+    YRN
+    DUMMY
+}
