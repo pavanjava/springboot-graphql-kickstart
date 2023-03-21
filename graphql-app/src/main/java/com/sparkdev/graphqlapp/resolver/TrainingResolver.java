@@ -15,7 +15,7 @@ import java.util.UUID;
 
 @Slf4j
 @Controller
-public class TrainingController {
+public class TrainingResolver {
 
     @QueryMapping
     public List<GraphqlClass> attendClass(@Argument Trainer trainer, GraphQLContext graphQLContext) {
