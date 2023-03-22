@@ -1,3 +1,4 @@
 type Mutation{
+    createBankAccount(openAccount: OpenAccount!): BankAccount!
     debitAmount(id: ID!, transaction:Transaction!): BankAccount!
 }

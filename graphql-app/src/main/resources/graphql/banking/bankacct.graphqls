@@ -5,3 +5,9 @@ type BankAccount{
     currency: Currency!
     transaction: [TransactionDetails!]
 }
+
+input OpenAccount{
+    acctHolderName: String!
+    amount: Float!
+    currency: Currency!
+}
