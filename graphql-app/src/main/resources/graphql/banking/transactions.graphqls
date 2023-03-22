@@ -1,0 +1,13 @@
+enum TransactionType{
+    DEBIT
+    CREDIT
+}
+type TransactionDetails{
+    id: ID!
+    trnxType: TransactionType!
+    trnxAmount: Float!
+}
+input Transaction{
+    trnxType: TransactionType!
+    trnxAmount: Float!
+}

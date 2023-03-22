@@ -1,4 +1,4 @@
 type Query{
     attendClass(trainer: Trainer!): [GraphqlClass!]!
-    fetchBankAccount(id: ID!): BankAcct!
+    fetchBankAccount(id: ID!): BankAccount!
 }
